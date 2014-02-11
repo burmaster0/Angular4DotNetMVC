@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="registrationModule">
+<head>
+    <title>College registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-resource.js"></script>
+    <script src="/Scripts/registration-module.js"></script>
+    <script src="/Scripts/Courses/courses-controller.js"></script>
+    <script src="/Scripts/Instructors/instructors-controller.js"></script>
+    <script src="/Scripts/Account/account-controller.js"></script>
+    <script src="/Scripts/Courses/courses-repository.js"></script>
+    <script src="/Scripts/Instructors/instructors-repository.js"></script>
+    <script src="/Scripts/Account/account-repository.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-yeti.min.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Registration</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/Registration/Courses">Browse catalog</a></li>
+                <li><a href="/Registration/Instructors">Browse instructors</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/Registration/CreateAccount">Create account</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <script src="/Scripts/jquery-2.0.3.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
